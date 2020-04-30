@@ -1,0 +1,90 @@
+<html>
+<head>
+	<meta name="author" content="Palina Pauliuchenka" />
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=7" />
+	<title>Valid Form</title>
+
+	<style>
+		p {
+			color: #db1679;
+			font-size: 3rem;
+			font-weight: bold;
+			font-family: monospace;
+		}
+		hr {
+			display: block;
+			height: 1px;
+			border: 0;
+			border-top: 1px solid #ccc;
+			margin: 1em 0;
+			padding: 0;
+		}
+		.error-message {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+<p>Valid Form</p>
+<hr>
+
+<form method="POST" action="http://fe.it-academy.by/TestForm.php" target="_blank" name="form" novalidate>
+
+	<label for="developers">Developers:</label>
+	<input type="text" name="developers" style="width: 453px">
+	<span class="error-message developers-err"></span><br><br>
+
+	<label for="sitename">Sitename:</label>
+	<input type="text" name="sitename" style="width: 453px">
+	<span class="error-message sitename-err"></span><br><br>
+
+	<label for="url">URL :</label>
+	<input type="text" name="url" style="width: 300px">
+	<span class="error-message url-err"></span><br><br>
+
+	<label for="launchdate">Launchdate:</label>
+	<input type="text" name="launchdate" style="width: 80px">
+	<span class="error-message launchdate-err"></span><br><br>
+
+	<label for="visitors">Visitors:</label>
+	<input type="text" name="visitors" style="width: 80px">
+	<span class="error-message visitors-err"></span><br><br>
+
+	<label for="mail">E-mail:</label>
+	<input type="text" name="mail" style="width: 200px">
+	<span class="error-message mail-err"></span><br><br>
+
+	<label for="mail">Division:</label>
+	<select name="division" style="width: 204px; margin-left: 2px">
+		<option value="0" selected="">Choose</option>
+		<option value="1">Photo studio</option>
+		<option value="2">IT-Tech</option>
+	</select>
+	<span class="error-message division-err"></span><br><br>
+
+	<label for="payment">Payment:</label>
+	<input type="radio" name="payment" value="1"><span>free</span>
+	<input type="radio" name="payment" value="2"><span>basic</span>
+	<input type="radio" name="payment" value="3"><span>VIP</span>
+	<span class="error-message payment-err"></span><br><br>
+
+	<label for="votes">Votes:</label>
+	<input type="checkbox" name="votes">
+	<span class="error-message votes-err"></span><br><br>
+
+	<label for="description">Description:</label><br><br>
+
+	<textarea name="description" style="width: 608px; height: 50px"></textarea>
+	<span class="error-message description-err"></span><br><br>
+
+	<input type="submit" value="send">
+</form>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

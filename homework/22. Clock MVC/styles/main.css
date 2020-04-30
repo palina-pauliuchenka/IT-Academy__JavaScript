@@ -1,0 +1,94 @@
+p {
+    color: #db1679;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.clock {
+    border-radius: 50%;       
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+}
+
+.arrow {
+    background-color: black;
+    position: absolute;            
+    border-radius: 20px;
+    z-index: 999;
+}
+
+.hours {
+    width: 12px;
+    height: 100px;
+    top: 70px;
+    left: 144px;
+    transform-origin: 6px 80px;  
+}
+
+.minutes {
+    width: 10px;
+    height: 130px;
+    top: 40px;
+    left: 145px;
+    transform-origin: 5px 110px;  
+}
+
+.seconds {
+    width: 4px;
+    height: 130px;
+    top: 40px;
+    left: 148px;    
+    transform-origin: 2px 110px;       
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.clock-container {
+    display: inline-block;
+    width: 450px;
+    margin: 5px;           
+}
+
+.btn {
+    width: 60px;
+    height: 30px;
+}
+
+.start {
+    margin-left: 10px;
+}
+
+.stop {
+    margin-left: 10px;
+}
+
+svg {
+    display: block;            
+    margin-top: 5px;
+}

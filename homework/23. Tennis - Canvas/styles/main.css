@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: #db1679;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: monospace;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#heading {
+  margin: 2% 0;
+}
+
+#startButton,
+.score,
+.count {
+  display: inline;
+}
+#startButton {
+  height: 40px;
+  width: 140px;
+  font-size: 20px;
+}
+
+.score {
+  font-size: 3rem;
+  font-family: monospace;
+  margin: 0 33%;
+}
+
+button {
+  border: none;
+}
+
+canvas {
+  display: flex;
+  justify-content: center;
+}

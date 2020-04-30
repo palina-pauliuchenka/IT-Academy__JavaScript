@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tennis - Canvas</title>
+    <link rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <p>Tennis - Canvas</p>
+    <hr>
+    <div id="container">
+      <div id="tennis">
+        <div id="heading">
+          <button id="startButton" onclick="start()">Старт!</button>
+          <div class="score">
+            <div id="leftPlayer" class="count">0</div>
+            <span>:</span>
+            <div id="rightPlayer" class="count">0</div>
+          </div>
+        </div>
+        <div>
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
